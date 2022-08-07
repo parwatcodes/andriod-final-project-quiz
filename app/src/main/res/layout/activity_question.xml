@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/lblPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="This text view is for question"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/btn_orange"
+        android:onClick="loadQuestion"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/optionB"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_border"
+        android:text="Option B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionA" />
+
+    <Button
+        android:id="@+id/optionC"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_border"
+        android:text="Option C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionB" />
+
+    <Button
+        android:id="@+id/optionD"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/button_border"
+        android:text="Option D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionC" />
+
+    <Button
+        android:id="@+id/optionA"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button_border"
+        android:text="Option A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPergunta" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

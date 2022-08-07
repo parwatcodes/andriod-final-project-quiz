@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ontarios Traffic Quiz App</string>
+    <string name="welcome_message">Welcome, Lets go...</string>
+    <string name="start">Start</string>
+    <string name="play">Play</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="confirm">Confirm</string>
+    <string name="scores">Scores</string>
+</resources>
