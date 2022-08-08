@@ -5,6 +5,7 @@
     <color name="colorAccent">#FEE60A</color>
     <color name="colorBase">#F2B30F</color>
     <color name="colorOrangeBaseDark">#E84C02</color>
-    <color name="green">#00A300</color>
-
+    <color name="green">#0AA50A</color>
+    <color name="disabled">#666666</color>
+    <color name="black">#000000</color>
 </resources>
