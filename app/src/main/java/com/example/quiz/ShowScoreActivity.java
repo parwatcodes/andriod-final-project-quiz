@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class ShowScoreActivity extends AppCompatActivity {
     TextView TxtScore;
     TextView TxtStatus;
-    MediaPlayer audio;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,25 +24,26 @@ public class ShowScoreActivity extends AppCompatActivity {
 
         TxtScore.setText(scores);
         TxtStatus.setText(setStatus(scores));
-        audio.start();
+
     }
 
     private String setStatus(String scores){
         int score = Integer.parseInt(scores);
 
-        if(score >= 8){
-            audio = MediaPlayer.create(this, R.raw.high_score);
-            return "Você é muito inteligente!";
+        switch (score) {
+            case 0:
+            case 1:
+            case 2:
+                return "Please try again!";
+            case 3:
+                return "Good job!";
+            case 4:
+                return "Excellent work!";
+            case 5:
+                return "You are a genius!";
+            default:
+                return "";
         }
-
-        if (score >= 5){
-            audio = MediaPlayer.create(this,  R.raw.medium_score);
-            return "Parabéns!";
-        }
-
-        audio = MediaPlayer.create(this,  R.raw.low_score);
-        return "Você precisa estudar mais...";
-
     }
 
 

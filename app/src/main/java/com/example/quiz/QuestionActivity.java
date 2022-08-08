@@ -57,7 +57,8 @@ public class QuestionActivity extends AppCompatActivity {
 
 
     public void loadQuestion(View view){
-        if(questions.size() > 0) {
+        System.out.println("ii" + questionIndex + questions.size());
+        if(questions.size() > 0 && questionIndex < questions.size()) {
             Question q = questions.get(questionIndex);
             lblQuestion.setText(q.getQuestion());
             List<String> answers = q.getAnswers();
